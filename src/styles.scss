@@ -1,1 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
+@import '@urmom/core/main.scss';
+
+$primary: (
+  500: #002ed5,
+  contrast: (
+    500: #fff,
+  )
+);
+
+@include counter($primary);
+
+.counter-button {
+  min-width: 50px;
+  border-radius: 0;
+}
+
